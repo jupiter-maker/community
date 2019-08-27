@@ -12,6 +12,8 @@
 [thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html)
 [Spring Mvc](https://docs.spring.io/spring/docs/5.0.3.RELEASE/spring-framework-reference/web.html#mvc-config-interceptors)
 [MyBtis](http://www.mybatis.org/generator/)
+[jquery](https://api.jquery.com/)
+[Markdown](http://editor.md.ipandao.com)
 ##工具
 [Git](https://git-scm.com/download)
 [Visual Paradigm](https://www.visual-paradigm.com)

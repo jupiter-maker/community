@@ -1,8 +1,8 @@
 package com.jupiter.community.service;
 
 import com.jupiter.community.mapper.UserMapper;
-import com.jupiter.community.model.User;
 import com.jupiter.community.model.UserExample;
+import com.jupiter.community.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

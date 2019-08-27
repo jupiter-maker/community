@@ -2,14 +2,12 @@ package com.jupiter.community.exception;
 
 public class CustomizeException extends RuntimeException {
 
+    private Integer status;
     private String message;
 
     public CustomizeException(ICustomizeErrorCode errorCode) {
+        this.status=errorCode.getStatus();
         this.message = errorCode.getMessage();
-    }
-
-    public CustomizeException(String message) {
-        this.message = message;
     }
 
     @Override
@@ -17,4 +15,7 @@ public class CustomizeException extends RuntimeException {
         return message;
     }
 
+    public Integer getStatus() {
+        return status;
+    }
 }

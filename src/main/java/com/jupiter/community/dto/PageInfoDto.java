@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class PageInfoDto {
+public class PageInfoDto<T> {
     private Integer pn;//当前页数
     private Integer rows;//每页条数
     private Integer totalCount;//总记录数
     private Integer pageSize;//总页数
-    private List<QuestionDto> questions;  //当前页的对象信息
+    private List<T> data;  //当前页的对象信息
     private List<Integer> pages = new ArrayList<>();//当前页应该显示的页码数组
 
     //12345
