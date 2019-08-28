@@ -1,5 +1,6 @@
 package com.jupiter.community.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.jupiter.community.dto.CommentCreateDto;
 import com.jupiter.community.dto.CommentDto;
 import com.jupiter.community.dto.CommunityResultDto;
@@ -15,6 +16,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
 import java.util.List;
 
 @Controller
@@ -46,10 +49,18 @@ public class CommentController {
         return CommunityResultDto.build(200, "成功");
     }
 
-    @ResponseBody
     @RequestMapping(value = "/comment/{commentId}", method = RequestMethod.GET)
-    public CommunityResultDto comments(@PathVariable(name = "commentId") Long commentId) {
+    public CommunityResultDto comments(@PathVariable(name = "commentId") Long commentId,
+                                       HttpServletResponse response) {
         List<CommentDto> commentDtos = commentService.listByTargetId(commentId, CommentTypeEnum.COMMENT);
-        return CommunityResultDto.ok(commentDtos);
+        response.setContentType("text/html; charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
+        try{
+            PrintWriter writer = response.getWriter();
+            writer.write(JSON.toJSONString(CommunityResultDto.ok(commentDtos)));
+            writer.close();
+        }catch(Exception e){
+        }
+        return null;
     }
 }
