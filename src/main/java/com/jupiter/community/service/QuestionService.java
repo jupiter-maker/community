@@ -51,7 +51,11 @@ public class QuestionService {
         if(pn>pageInfoDto.getPageSize()){
             pn=pageInfoDto.getPageSize();
         }
-        questionQueryDto.setPn((pn-1)*rows);
+        if(pageInfoDto.getPageSize()<1){
+            questionQueryDto.setPn(0);
+        }else{
+            questionQueryDto.setPn((pn-1)*rows);
+        }
         questionQueryDto.setRows(rows);
         List<Question> questions = questionExtMapper.selectBySearch(questionQueryDto);
         List<QuestionDto> questionDtos = new ArrayList<>();
