@@ -12,18 +12,18 @@ public class TagCache {
     public static List<TagDto> get(){
         List<TagDto> tagDtos = new ArrayList<>();
         TagDto program = new TagDto();
-        program.setCategoryName("开发语言");
+        program.setCategoryName("编程相关");
         program.setTags(Arrays.asList("java","php","python","js","node","c","c++"));
         tagDtos.add(program);
 
         TagDto framework = new TagDto();
-        framework.setCategoryName("平台框架");
-        framework.setTags(Arrays.asList("spring","springboot","easyui","vue"));
+        framework.setCategoryName("学习交流");
+        framework.setTags(Arrays.asList("考研","竞赛","专业","大学"));
         tagDtos.add(framework);
 
         TagDto life = new TagDto();
-        life.setCategoryName("生活区");
-        life.setTags(Arrays.asList("考研","学习","工作","日常"));
+        life.setCategoryName("生活日常");
+        life.setTags(Arrays.asList("明星","日常","追剧","动漫"));
         tagDtos.add(life);
         return tagDtos;
     }
