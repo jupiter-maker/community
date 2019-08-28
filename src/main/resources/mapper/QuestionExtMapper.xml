@@ -33,19 +33,19 @@
     <select id="countBySearch" parameterType="com.jupiter.community.dto.QuestionQueryDto" resultType="java.lang.Integer">
     select count(*) from community_question
     <where>
-        <if test="record.search != null">
-            title regexp #{record.search}
+        <if test="search != null">
+            title regexp #{search}
         </if>
     </where>
   </select>
     <select id="selectBySearch" parameterType="com.jupiter.community.dto.QuestionQueryDto" resultMap="BaseResultMap">
     select * from community_question
     <where>
-        <if test="record.search != null">
-            title regexp #{record.search}
+        <if test="search != null">
+            title regexp #{search}
         </if>
     </where>
-    order by gmt_create desc limit #{record.pn},#{record.rows}
+    order by gmt_create desc limit #{pn},#{rows}
 
   </select>
 </mapper>

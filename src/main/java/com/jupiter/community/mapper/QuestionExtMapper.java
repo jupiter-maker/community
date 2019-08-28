@@ -12,7 +12,7 @@ public interface QuestionExtMapper {
     int incCommentCount(@Param("record") Question record);
     List<Question> selectRelated(@Param("record") Question record);
 
-    Integer countBySearch(@Param("record")QuestionQueryDto questionQueryDto);
+    Integer countBySearch(QuestionQueryDto questionQueryDto);
 
-    List<Question> selectBySearch(@Param("record") QuestionQueryDto questionQueryDto);
+    List<Question> selectBySearch(QuestionQueryDto questionQueryDto);
 }

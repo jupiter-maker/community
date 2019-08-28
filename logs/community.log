@@ -66,3 +66,398 @@
 2019-08-28 14:45:09.699  WARN 9980 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [816] milliseconds.
 2019-08-28 14:45:09.783  INFO 9980 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2019-08-28 14:45:09.973  INFO 9980 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:20:17.673  INFO 3264 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 3264 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:20:17.676  INFO 3264 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:20:17.723  INFO 3264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:20:17.724  INFO 3264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:20:18.972  INFO 3264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:20:18.991  INFO 3264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:20:18.992  INFO 3264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:20:19.092  INFO 3264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:20:19.092  INFO 3264 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1368 ms
+2019-08-28 16:20:19.549  INFO 3264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:20:19.608  INFO 3264 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:20:19.876  INFO 3264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:20:19.928  INFO 3264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:20:19.933  INFO 3264 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 2.575 seconds (JVM running for 3.861)
+2019-08-28 16:20:37.565  INFO 3264 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:20:37.566  INFO 3264 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:20:37.576  INFO 3264 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-08-28 16:20:38.046  WARN 3264 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [454] milliseconds.
+2019-08-28 16:20:38.100  INFO 3264 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:20:38.223  INFO 3264 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:20:41.146  WARN 3264 --- [http-nio-8887-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:23:37.098  INFO 4652 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 4652 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:23:37.106  INFO 4652 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:23:37.150  INFO 4652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:23:37.151  INFO 4652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:23:38.781  INFO 4652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:23:38.803  INFO 4652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:23:38.804  INFO 4652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:23:38.932  INFO 4652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:23:38.933  INFO 4652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1781 ms
+2019-08-28 16:23:39.429  INFO 4652 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:23:39.487  INFO 4652 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:23:39.775  INFO 4652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:23:39.820  INFO 4652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:23:39.823  INFO 4652 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.04 seconds (JVM running for 4.32)
+2019-08-28 16:23:42.783  INFO 4652 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:23:42.785  INFO 4652 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:23:42.797  INFO 4652 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-08-28 16:23:43.262  WARN 4652 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [451] milliseconds.
+2019-08-28 16:23:43.314  INFO 4652 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:23:43.416  INFO 4652 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:23:43.475  WARN 4652 --- [http-nio-8887-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:23:54.391  WARN 4652 --- [http-nio-8887-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:24:26.565  INFO 14768 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 14768 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:24:26.569  INFO 14768 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:24:26.620  INFO 14768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:24:26.621  INFO 14768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:24:27.908  INFO 14768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:24:27.928  INFO 14768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:24:27.929  INFO 14768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:24:28.032  INFO 14768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:24:28.033  INFO 14768 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1412 ms
+2019-08-28 16:24:28.502  INFO 14768 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:24:28.560  INFO 14768 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:24:28.843  INFO 14768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:24:28.901  INFO 14768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:24:28.905  INFO 14768 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 2.733 seconds (JVM running for 3.982)
+2019-08-28 16:25:47.501  INFO 12916 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 12916 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:25:47.504  INFO 12916 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:25:47.541  INFO 12916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:25:47.542  INFO 12916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:25:48.667  INFO 12916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:25:48.687  INFO 12916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:25:48.688  INFO 12916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:25:48.807  INFO 12916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:25:48.807  INFO 12916 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1265 ms
+2019-08-28 16:25:49.267  INFO 12916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:25:49.323  INFO 12916 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:25:49.587  INFO 12916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:25:49.639  INFO 12916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:25:49.644  INFO 12916 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 2.67 seconds (JVM running for 3.975)
+2019-08-28 16:25:54.050  INFO 12916 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:25:54.051  INFO 12916 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:25:54.057  INFO 12916 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-08-28 16:25:54.530  WARN 12916 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [459] milliseconds.
+2019-08-28 16:25:54.581  INFO 12916 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:25:54.687  INFO 12916 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:25:54.762  WARN 12916 --- [http-nio-8887-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:26:02.663  WARN 12916 --- [http-nio-8887-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:27:58.071  INFO 16960 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 16960 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:27:58.081  INFO 16960 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:27:58.137  INFO 16960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:27:58.138  INFO 16960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:27:59.400  INFO 16960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:27:59.424  INFO 16960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:27:59.425  INFO 16960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:27:59.534  INFO 16960 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:27:59.534  INFO 16960 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1396 ms
+2019-08-28 16:27:59.998  INFO 16960 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:28:00.053  INFO 16960 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:28:00.323  INFO 16960 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:28:00.377  INFO 16960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:28:00.380  INFO 16960 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 2.636 seconds (JVM running for 3.985)
+2019-08-28 16:28:07.366  INFO 16960 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:28:07.367  INFO 16960 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:28:07.377  INFO 16960 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-08-28 16:28:07.856  WARN 16960 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [464] milliseconds.
+2019-08-28 16:28:07.904  INFO 16960 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:28:08.011  INFO 16960 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:28:09.919  WARN 16960 --- [http-nio-8887-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:28:19.739  INFO 15804 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 15804 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:28:19.742  INFO 15804 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:28:19.788  INFO 15804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:28:19.789  INFO 15804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:28:21.100  INFO 15804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:28:21.125  INFO 15804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:28:21.125  INFO 15804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:28:21.249  INFO 15804 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:28:21.250  INFO 15804 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1461 ms
+2019-08-28 16:28:22.534  INFO 15804 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:28:22.603  INFO 15804 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:28:22.931  INFO 15804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:28:23.036  INFO 15804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:28:23.041  INFO 15804 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.638 seconds (JVM running for 7.312)
+2019-08-28 16:28:32.294  INFO 15804 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:28:32.295  INFO 15804 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:28:32.309  INFO 15804 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-08-28 16:28:32.776  WARN 15804 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [441] milliseconds.
+2019-08-28 16:28:32.838  INFO 15804 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:28:32.979  INFO 15804 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:28:33.059  WARN 15804 --- [http-nio-8887-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:28:47.121  WARN 15804 --- [http-nio-8887-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:29:22.379  INFO 15804 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:29:22.380  INFO 15804 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-28 16:29:22.390  INFO 15804 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-28 16:29:26.850  INFO 8368 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 8368 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:29:26.852  INFO 8368 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:29:26.908  INFO 8368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:29:26.908  INFO 8368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:29:28.374  INFO 8368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:29:28.398  INFO 8368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:29:28.398  INFO 8368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:29:28.515  INFO 8368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:29:28.515  INFO 8368 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1607 ms
+2019-08-28 16:29:29.112  INFO 8368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:29:29.172  INFO 8368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:29:29.474  INFO 8368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:29:29.563  INFO 8368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:29:29.574  INFO 8368 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.173 seconds (JVM running for 4.75)
+2019-08-28 16:29:35.193  INFO 8368 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:29:35.194  INFO 8368 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:29:35.200  INFO 8368 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-08-28 16:29:43.750  INFO 8368 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:29:45.568  INFO 8368 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:30:32.573  WARN 8368 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s902ms880µs500ns).
+2019-08-28 16:31:21.505  WARN 8368 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s931ms437µs400ns).
+2019-08-28 16:31:53.221  INFO 8368 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:31:53.224  INFO 8368 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-28 16:31:53.239  INFO 8368 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-28 16:31:57.285  INFO 14408 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 14408 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:31:57.292  INFO 14408 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:31:57.405  INFO 14408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:31:57.405  INFO 14408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:31:59.042  INFO 14408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:31:59.068  INFO 14408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:31:59.068  INFO 14408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:31:59.202  INFO 14408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:31:59.202  INFO 14408 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1797 ms
+2019-08-28 16:31:59.809  INFO 14408 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:31:59.869  INFO 14408 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:32:00.197  INFO 14408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:32:00.298  INFO 14408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:32:00.307  INFO 14408 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.579 seconds (JVM running for 5.629)
+2019-08-28 16:32:00.348  INFO 14408 --- [http-nio-8887-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:32:00.348  INFO 14408 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:32:00.356  INFO 14408 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-08-28 16:32:08.683  INFO 14408 --- [http-nio-8887-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:32:08.789  INFO 14408 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:32:08.813  INFO 14408 --- [http-nio-8887-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:32:08.856  WARN 14408 --- [http-nio-8887-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.selectBySearch
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (HikariPool-1) has been closed.]
+2019-08-28 16:32:13.636  INFO 15988 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 15988 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:32:13.638  INFO 15988 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:32:13.710  INFO 15988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:32:13.711  INFO 15988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:32:15.038  INFO 15988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:32:15.060  INFO 15988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:32:15.060  INFO 15988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:32:15.176  INFO 15988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:32:15.176  INFO 15988 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1465 ms
+2019-08-28 16:32:15.797  INFO 15988 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:32:15.863  INFO 15988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:32:16.195  INFO 15988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:32:16.316  INFO 15988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:32:16.322  INFO 15988 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.207 seconds (JVM running for 4.898)
+2019-08-28 16:32:35.671  INFO 15988 --- [http-nio-8887-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:32:35.673  INFO 15988 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:32:35.680  INFO 15988 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-08-28 16:32:59.503  INFO 15988 --- [http-nio-8887-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:33:01.248  INFO 15988 --- [http-nio-8887-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:33:46.536  WARN 15988 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s186ms718µs800ns).
+2019-08-28 16:35:25.734  INFO 15988 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:35:25.735  INFO 15988 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-28 16:35:25.750  INFO 15988 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-28 16:37:03.548  INFO 12420 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 12420 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:37:03.557  INFO 12420 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:37:03.600  INFO 12420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:37:03.601  INFO 12420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:37:04.810  INFO 12420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:37:04.832  INFO 12420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:37:04.833  INFO 12420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:37:04.946  INFO 12420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:37:04.946  INFO 12420 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1345 ms
+2019-08-28 16:37:05.393  INFO 12420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:37:05.447  INFO 12420 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:37:05.703  INFO 12420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:37:05.755  INFO 12420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:37:05.778  INFO 12420 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 2.581 seconds (JVM running for 3.8)
+2019-08-28 16:37:14.352  INFO 12420 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:37:14.354  INFO 12420 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:37:14.361  INFO 12420 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-08-28 16:37:14.877  WARN 12420 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [499] milliseconds.
+2019-08-28 16:37:14.923  INFO 12420 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:37:15.024  INFO 12420 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:37:17.402  WARN 12420 --- [http-nio-8887-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:44:58.667  INFO 15200 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 15200 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:44:58.673  INFO 15200 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:44:58.758  INFO 15200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:44:58.758  INFO 15200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:45:00.171  INFO 15200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:45:00.195  INFO 15200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:45:00.195  INFO 15200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:45:00.307  INFO 15200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:45:00.307  INFO 15200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1549 ms
+2019-08-28 16:45:00.788  INFO 15200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:45:00.843  INFO 15200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:45:01.117  INFO 15200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:45:01.175  INFO 15200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:45:01.178  INFO 15200 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.169 seconds (JVM running for 4.73)
+2019-08-28 16:48:11.674  INFO 15200 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:48:11.675  INFO 15200 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:48:11.682  INFO 15200 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-08-28 16:48:12.134  WARN 15200 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [434] milliseconds.
+2019-08-28 16:53:31.727  INFO 13524 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 13524 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:53:31.730  INFO 13524 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:53:31.794  INFO 13524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:53:31.795  INFO 13524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:53:33.180  INFO 13524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:53:33.202  INFO 13524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:53:33.203  INFO 13524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:53:33.307  INFO 13524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:53:33.308  INFO 13524 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1513 ms
+2019-08-28 16:53:33.800  INFO 13524 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:53:33.849  INFO 13524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:53:34.108  INFO 13524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:53:34.150  INFO 13524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:53:34.161  INFO 13524 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 2.759 seconds (JVM running for 4.198)
+2019-08-28 16:53:48.969  INFO 1200 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 1200 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 16:53:48.971  INFO 1200 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 16:53:49.016  INFO 1200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 16:53:49.017  INFO 1200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 16:53:50.645  INFO 1200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 16:53:50.665  INFO 1200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 16:53:50.666  INFO 1200 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 16:53:50.787  INFO 1200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 16:53:50.788  INFO 1200 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1771 ms
+2019-08-28 16:53:51.279  INFO 1200 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 16:53:51.331  INFO 1200 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 16:53:51.594  INFO 1200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 16:53:51.636  INFO 1200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 16:53:51.651  INFO 1200 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.01 seconds (JVM running for 4.463)
+2019-08-28 16:54:08.342  INFO 1200 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 16:54:08.344  INFO 1200 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 16:54:08.350  INFO 1200 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-08-28 16:54:08.822  WARN 1200 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [455] milliseconds.
+2019-08-28 16:54:08.863  INFO 1200 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 16:54:08.966  INFO 1200 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-28 16:54:09.031  WARN 1200 --- [http-nio-8887-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 16:54:16.715  WARN 1200 --- [http-nio-8887-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch-Inline
+### The error occurred while setting parameters
+### SQL: select count(*) from community_question      WHERE title regexp ?
+### Cause: java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Got error 'empty (sub)expression' from regexp]
+2019-08-28 17:00:41.395  INFO 8452 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 8452 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 17:00:41.409  INFO 8452 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 17:00:41.461  INFO 8452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 17:00:41.461  INFO 8452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 17:00:42.839  INFO 8452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 17:00:42.860  INFO 8452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 17:00:42.860  INFO 8452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 17:00:42.974  INFO 8452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 17:00:42.974  INFO 8452 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1513 ms
+2019-08-28 17:00:43.518  INFO 8452 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 17:00:43.577  INFO 8452 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 17:00:43.880  INFO 8452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 17:00:44.010  INFO 8452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 17:00:44.014  INFO 8452 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 3.185 seconds (JVM running for 4.687)
+2019-08-28 17:00:50.775  INFO 8452 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 17:00:50.777  INFO 8452 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 17:00:50.786  INFO 8452 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-08-28 17:00:51.353  WARN 8452 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [545] milliseconds.
+2019-08-28 17:01:51.625  INFO 8452 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-28 17:01:52.177  WARN 8452 --- [http-nio-8887-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (null) has been closed.
+### The error may exist in file [G:\IdeaProjects\community\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.jupiter.community.mapper.QuestionExtMapper.countBySearch
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: HikariDataSource HikariDataSource (null) has been closed.]
+2019-08-28 17:02:19.528  INFO 16784 --- [restartedMain] c.j.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-3LJS3I3F with PID 16784 (G:\IdeaProjects\community\target\classes started by 谪仙 in G:\IdeaProjects\community)
+2019-08-28 17:02:19.531  INFO 16784 --- [restartedMain] c.j.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-08-28 17:02:19.568  INFO 16784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-28 17:02:19.568  INFO 16784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-28 17:02:20.818  INFO 16784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-08-28 17:02:20.838  INFO 16784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-28 17:02:20.839  INFO 16784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-28 17:02:20.960  INFO 16784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-28 17:02:20.960  INFO 16784 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1392 ms
+2019-08-28 17:02:21.434  INFO 16784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-28 17:02:21.498  INFO 16784 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-28 17:02:21.787  INFO 16784 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-28 17:02:21.837  INFO 16784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-08-28 17:02:21.842  INFO 16784 --- [restartedMain] c.j.community.CommunityApplication       : Started CommunityApplication in 2.739 seconds (JVM running for 4.367)
+2019-08-28 17:03:46.957  INFO 16784 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-28 17:03:46.958  INFO 16784 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-28 17:03:46.968  INFO 16784 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-08-28 17:03:47.449  WARN 16784 --- [http-nio-8887-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [466] milliseconds.
+2019-08-28 17:03:47.489  INFO 16784 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-28 17:03:47.591  INFO 16784 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

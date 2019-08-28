@@ -42,7 +42,9 @@ public class QuestionService {
         PageInfoDto<QuestionDto> pageInfoDto = new PageInfoDto<>();
 
         QuestionQueryDto questionQueryDto = new QuestionQueryDto();
-        questionQueryDto.setSearch(search);
+        if(StringUtils.isNotBlank(search)){
+            questionQueryDto.setSearch(search);
+        }
         Integer totalCount = questionExtMapper.countBySearch(questionQueryDto);
         pageInfoDto.setPageInfo(totalCount,pn,rows);
         if(pn<1){
@@ -51,13 +53,13 @@ public class QuestionService {
         if(pn>pageInfoDto.getPageSize()){
             pn=pageInfoDto.getPageSize();
         }
-        if(pageInfoDto.getPageSize()<1){
-            questionQueryDto.setPn(0);
-        }else{
-            questionQueryDto.setPn((pn-1)*rows);
-        }
+        questionQueryDto.setPn((pn-1)*rows);
         questionQueryDto.setRows(rows);
         List<Question> questions = questionExtMapper.selectBySearch(questionQueryDto);
+        if(questions==null){
+            pageInfoDto.setData(null);
+            return pageInfoDto;
+        }
         List<QuestionDto> questionDtos = new ArrayList<>();
         for(Question question:questions){
             User user = userMapper.selectByPrimaryKey(question.getCreator());
